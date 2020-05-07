@@ -1,24 +1,30 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import drac from './assets/dracula.svg'
+
+import Routes from './routes';
 
 function App() {
+
+  function themeChange(e) {
+    if (e.target.checked) {
+      document.documentElement.setAttribute('data-theme', 'dracula');
+    }
+    else {
+      document.documentElement.removeAttribute('data-theme');
+    }
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <div className="theme-switch-wrapper">
+        <img src={drac} alt="dracula logo" />
+        <label className="theme-switch">
+          <input type="checkbox" id="checkbox" onChange={themeChange} />
+          <div className="slider round"></div>
+        </label>
+      </div>
+      <Routes />
     </div>
   );
 }
