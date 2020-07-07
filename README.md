@@ -38,7 +38,6 @@ This project was developed by Raphael Neves with the following technologies:
 -  [Immer](https://github.com/immerjs/immer)
 -  [React-Toastify](https://fkhadra.github.io/react-toastify/)
 -  [styled-components](https://www.styled-components.com/)
--  [React-native-vector-icons](https://github.com/oblador/react-native-vector-icons)
 -  [Reactotron](https://infinite.red/reactotron)
 -  [moment](https://infinite.red/reactotron)
 -  [VS Code][vc] with [EditorConfig][vceditconfig] and [ESLint][vceslint]
